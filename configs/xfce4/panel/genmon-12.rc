@@ -1,0 +1,6 @@
+Command=echo "<txt>  </txt><txtclick>wmctrl -k on</txtclick>"
+UseLabel=1
+Text=
+UpdatePeriod=30000
+Font=Noto Sans,  10
+
