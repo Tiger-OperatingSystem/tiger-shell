@@ -1,0 +1,4 @@
+Command=/usr/share/tiger-shell/scripts/Kalendario.sh
+UseLabel=1
+Text=
+UpdatePeriod=1000
