@@ -30,7 +30,7 @@ mkdir -p "${working_dir}/DEBIAN/"
 
 
 cp -rf "configs"   "${working_dir}/usr/share/tiger-shell/"
-cp -rf "scripts"/* "${working_dir}/usr/share/tiger-shell/"
+cp -rf "scripts"/* "${working_dir}/usr/share/tiger-shell/scripts/"
 cp tiger_session "${working_dir}/usr/bin"
 cp tiger-session.desktop  "${working_dir}/usr/share/xsessions"
 
