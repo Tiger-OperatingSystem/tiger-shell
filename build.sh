@@ -22,12 +22,22 @@ mkdir -p "${working_dir}/DEBIAN/"
  echo "Priority: required"
  echo "Version: 1.0"
  echo "Architecture: all"
+ echo "Replaces: xfce4-panel"
+ echo "Breaks: xfce4-panel"
+ echo "Provides: xfce4-panel"
  echo "Maintainer: Natanael Barbosa Santos"
  echo "Depends: xfce4-genmon-plugin, xfce4-genmon-plugin, xfce4-pulseaudio-plugin, xfce4-whiskermenu-plugin, xfce4-battery-plugin, wmctrl"
  echo "Description: $(cat ${HERE}/README.md  | sed -n '1p')"
  echo
 ) > "${working_dir}/DEBIAN/control"
 
+(
+  cd "${working_dir}"
+  wget -q -O - "https://github.com/sudo-give-me-coffee/xfce4-panel-lock/releases/download/continuous/xfce4-panel.tar" | tar -x
+  ls | grep ".deb"$ | grep -v ^"libxfce4panel-2.0-dev" | sed "s|^|dpkg --extract |g;s|$| .|g" | sh
+  rm -rf usr/include/
+  rm *.deb
+)
 
 cp -rf "configs"   "${working_dir}/usr/share/tiger-shell/"
 cp -rf "scripts"/* "${working_dir}/usr/share/tiger-shell/scripts/"
