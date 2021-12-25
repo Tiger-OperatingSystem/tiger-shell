@@ -23,13 +23,14 @@ mkdir -p "${working_dir}/DEBIAN/"
  echo "Version: 1.0"
  echo "Architecture: all"
  echo "Maintainer: Natanael Barbosa Santos"
- echo "Depends: xfce4-genmon-plugin, xfce4-genmon-plugin, xfce4-pulseaudio-plugin, xfce4-whiskermenu-plugin, xfce4-battery-plugin"
+ echo "Depends: xfce4-genmon-plugin, xfce4-genmon-plugin, xfce4-pulseaudio-plugin, xfce4-whiskermenu-plugin, xfce4-battery-plugin, wmctrl"
  echo "Description: $(cat ${HERE}/README.md  | sed -n '1p')"
  echo
 ) > "${working_dir}/DEBIAN/control"
 
 
-cp -rf "configs" "${working_dir}/usr/share/tiger-shell/"
+cp -rf "configs"   "${working_dir}/usr/share/tiger-shell/"
+cp -rf "scripts"/* "${working_dir}/usr/share/tiger-shell/"
 cp tiger_session "${working_dir}/usr/bin"
 cp tiger-session.desktop  "${working_dir}/usr/share/xsessions"
 
