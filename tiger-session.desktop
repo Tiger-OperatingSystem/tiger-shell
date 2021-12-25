@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Name=Tiger Desktop
+Exec=tiger_session
+Icon=
+Type=Application
+DesktopNames=XFCE
