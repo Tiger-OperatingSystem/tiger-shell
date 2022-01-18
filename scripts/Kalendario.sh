@@ -17,8 +17,8 @@ SELF=$(readlink -f "${0}")
 
 # O generic-monitor do XFCE da LTS 20.04 do Ubuntu não centraliza automaticamente o texto
 # isso foi corrigido no 22.04 mas ainda não foi lançado
-# time=$(date '+   %H:%M%n %d/%m/%Y ')
-time=$(date '+%H:%M%n %d/%m/%Y ')
+time=$(date '+   %H:%M%n %d/%m/%Y ')
+# time=$(date '+%H:%M%n %d/%m/%Y ')
 
 tooltip=$(date '+Hoje é %d de %B de %Y')
 
