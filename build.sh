@@ -14,7 +14,7 @@ working_dir=$(mktemp -d)
 
 mkdir -p "${working_dir}/usr/bin"
 mkdir -p "${working_dir}/usr/share/tiger-shell/scripts/"
-mkdir -p "${working_dir}/usr/share/xsessions"
+# mkdir -p "${working_dir}/usr/share/xsessions"
 mkdir -p "${working_dir}/DEBIAN/"
 
 (
@@ -30,8 +30,8 @@ mkdir -p "${working_dir}/DEBIAN/"
 
 cp -rf "configs"   "${working_dir}/usr/share/tiger-shell/"
 cp -rf "scripts"/* "${working_dir}/usr/share/tiger-shell/scripts/"
-cp tiger_session "${working_dir}/usr/bin"
-cp tiger-session.desktop  "${working_dir}/usr/share/xsessions"
+cp startxfce4 "${working_dir}/usr/bin"
+# cp tiger-session.desktop  "${working_dir}/usr/share/xsessions"
 
 echo "Downloading Whisker Menu scripts..."
 
