@@ -13,4 +13,4 @@
   touch "${HOME}/.tiger-firstrun"
 }
 
-exec startxfce4
+exec startxfce4.orig
