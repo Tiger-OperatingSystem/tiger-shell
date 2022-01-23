@@ -59,6 +59,7 @@ for arg in ${@}; do
 
   [ "${arg}" = "--refresh" ] && {
     SKIP_XFCE=1
+    [ -f "${HOME}/.tiger-firstrun" ] && rm "${HOME}/.tiger-firstrun"
     shift
   }
 
