@@ -68,7 +68,7 @@ count=$(ls whisker-scripts-main/actions/ | wc -l)
     echo "regex=false"
     echo
   done
-) | tee "${working_dir}/usr/share/tiger-shell/configs/xfce4/panel/whiskermenu-1.rc"
+) | tee -a "${working_dir}/usr/share/tiger-shell/configs/xfce4/panel/whiskermenu-1.rc"
 
 rm -rfv ${whisker-scripts-main}
 
