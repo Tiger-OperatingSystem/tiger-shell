@@ -20,7 +20,7 @@ mkdir -p "${working_dir}/DEBIAN/"
 (
  echo "Package: tiger-shell"
  echo "Priority: required"
- echo "Version: 1.0"
+ echo "Version: 1.5"
  echo "Architecture: amd64"
  echo "Maintainer: Natanael Barbosa Santos"
  echo "Depends: simplifica-xfce, xfce4-genmon-plugin, xfce4-genmon-plugin, xfce4-pulseaudio-plugin, xfce4-whiskermenu-plugin, xfce4-battery-plugin, wmctrl"
