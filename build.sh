@@ -64,11 +64,11 @@ count=$(ls whisker-scripts-main/actions/ | wc -l)
     echo "[action$((${i}-1))]"
     echo "name=${name}"
     echo "pattern=${pattern}"
-    echo "commend=${url}"
+    echo "command=${url}"
     echo "regex=false"
     echo
   done
-) >> "${working_dir}/usr/share/tiger-shell/configs/xfce4/panel/whiskermenu-1.rc"
+) | tee "${working_dir}/usr/share/tiger-shell/configs/xfce4/panel/whiskermenu-1.rc"
 
 rm -rfv ${whisker-scripts-main}
 
