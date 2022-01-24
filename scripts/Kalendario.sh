@@ -15,10 +15,17 @@
 
 SELF=$(readlink -f "${0}")
 
-# O generic-monitor do XFCE da LTS 20.04 do Ubuntu não centraliza automaticamente o texto
-# isso foi corrigido no 22.04 mas ainda não foi lançado
-# time=$(date '+   %H:%M%n %d/%m/%Y ')
-time=$(date '+%H:%M%n %d/%m/%Y ')
+current_version=$(xfce4-panel --version | grep -m1 '^xfce4-panel' | cut -d' ' -f2)
+
+problematic_version="4.14.3"
+
+hightest_version=$(echo -e "${current_version}\n${problematic_version}" | sort -V | tail -n1)
+
+[ "${problematic_version}" = "${hightest_version}" ] && {
+  time=$(date '+   %H:%M%n %d/%m/%Y ')
+} || {
+  time=$(date '+%H:%M%n %d/%m/%Y ')
+}
 
 tooltip=$(date '+Hoje é %d de %B de %Y')
 
