@@ -90,7 +90,7 @@ done
   killall xfconfd
   mkdir -p "${XDG_CONFIG_HOME}"
 
-  yes | /usr/bin/cp --no-preserve=ownership,timestamps -rf "/usr/share/tiger-shell/configs"/* "${XDG_CONFIG_HOME}"
+  yes | /usr/bin/cp --no-preserve=ownership,timestamps -rf "${TIGER_OS_CONFIG_DIR}"/* "${XDG_CONFIG_HOME}"
 
   touch "${HOME}/.tiger-firstrun"
 }
