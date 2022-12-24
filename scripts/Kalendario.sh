@@ -7,7 +7,7 @@
   choose_date=$(yad --calendar --mouse --undecorated --close-on-unfocus --skip-taskbar --width=480 --heigth=380 --borders=32 --button="Abrir no Google Agenda":0 --date-format='%Y/%m/%d')
 
   [ "${?}" = "0" ] && {
-    ice "https://calendar.google.com/calendar/u/0/r/day/${choose_date}"
+    webapp-player "https://calendar.google.com/calendar/u/0/r/day/${choose_date}"
     exit ${?}
   }
   exit 0
