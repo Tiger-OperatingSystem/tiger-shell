@@ -1,4 +1,4 @@
-favorites=mintinstall.desktop,exo-file-manager.desktop,firefox.desktop,welcome-tigeros.desktop,org.jitsi.jitsi-meet.desktop
+favorites=xfce4-file-manager.desktop,firefox.desktop,welcome-tigeros.desktop
 recent=
 button-title=Menu
 button-icon=xfce4-whiskermenu
@@ -8,19 +8,21 @@ show-button-icon=true
 launcher-show-name=true
 launcher-show-description=true
 launcher-show-tooltip=true
-item-icon-size=4
+launcher-icon-size=4
 hover-switch-category=false
 category-show-name=true
 category-icon-size=1
-load-hierarchy=false
-view-as-icons=true
+sort-categories=false
+view-mode=0
 default-category=0
 recent-items-max=10
 favorites-in-recent=false
 position-search-alternate=true
 position-commands-alternate=false
 position-categories-alternate=true
+position-categories-horizontal=false
 stay-on-focus-out=false
+profile-shape=0
 confirm-session-command=true
 menu-width=821
 menu-height=530
@@ -47,4 +49,59 @@ command-menueditor=menulibre
 show-command-menueditor=false
 command-profile=mugshot
 show-command-profile=false
+search-actions=9
+
+[action0]
+name=Pesquisar imagens na web
+pattern=.
+command=exo-open --launch WebBrowser https://google.com/search?q=%u&tbm=isch
+regex=false
+
+[action1]
+name=Pesquisar vídeos na web
+pattern=;
+command=exo-open --launch WebBrowser https://google.com/search?q=%u&tbm=vid
+regex=false
+
+[action2]
+name=Pesquisar na web
+pattern=,
+command=exo-open --launch WebBrowser https://google.com/search?q=%u
+regex=false
+
+[action3]
+name=Calcular expressão
+pattern==
+command=/usr/share/tiger-shell/scripts/inline-calculator %s
+regex=false
+
+[action4]
+name=Abrir no navegador
+pattern=www.
+command=exo-open --launch WebBrowser https://www.%u
+regex=false
+
+[action5]
+name=Pesquisar no DuckDuckGo
+pattern=ddg
+command=exo-open --launch WebBrowser https://duckduckgo.com/?q=%u
+regex=false
+
+[action6]
+name=Executar no terminal
+pattern=$
+command=exo-open --launch TerminalEmulator /usr/share/tiger-shell/scripts/enhanced-open-in-terminal %s
+regex=false
+
+[action7]
+name=Wikipédia
+pattern=\\w
+command=exo-open --launch WebBrowser https://pt.wikipedia.org/wiki/%u
+regex=false
+
+[action8]
+name=Pesquisar no YoutTube
+pattern=\\y
+command=exo-open --launch WebBrowser https://www.youtube.com/results?search_query=%u
+regex=false
 
