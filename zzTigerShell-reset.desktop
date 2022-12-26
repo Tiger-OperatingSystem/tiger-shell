@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Desfazer Canfigurações do Tiger Shell
+Comment=Permite resetar as personalizações no Tiger OS sem afetar seus programas e arquivos
+Exec=Tiger-Shell-reset.sh
+Icon=org.xfce.settings.editor
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;
+OnlyShowIn=XFCE;
+X-XfceSettingsManagerHidden=true
+X-XfcePluggable=true
