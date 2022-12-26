@@ -18,7 +18,7 @@ mkdir -p "${working_dir}/usr/share/tiger-shell/scripts/"
 mkdir -p "${working_dir}/usr/share/applications"
 mkdir -p "${working_dir}/DEBIAN/"
 
-cp "zzTigerShell-reset.desktop" "${working_dir}/usr/share/applications/zzTigerShell-reset.desktop"
+cp "zzTigerShell-reset.desktop" "${working_dir}/usr/share/tiger/xfce-config/applications/zzTigerShell-reset.desktop"
 
 (
  echo "Package: tiger-shell"
