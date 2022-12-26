@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Desfazer alteraç do Tiger Shell
+Name=Desfazer alterações do Tiger Shell
 Comment=Permite resetar as personalizações no Tiger OS sem afetar seus programas e arquivos
 Exec=Tiger-Shell-reset.sh
 Icon=org.xfce.settings.editor
