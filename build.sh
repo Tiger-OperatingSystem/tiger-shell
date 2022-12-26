@@ -15,7 +15,10 @@ working_dir=$(mktemp -d)
 mkdir -p "${working_dir}/usr/bin"
 mkdir -p "${working_dir}/usr/share/tiger-shell/scripts/"
 # mkdir -p "${working_dir}/usr/share/xsessions"
+mkdir -p "${working_dir}/usr/share/applications"
 mkdir -p "${working_dir}/DEBIAN/"
+
+cp "zzTigerShell-reset.desktop" "${working_dir}/usr/share/applications/zzTigerShell-reset.desktop"
 
 (
  echo "Package: tiger-shell"
@@ -31,6 +34,10 @@ mkdir -p "${working_dir}/DEBIAN/"
 cp -rf "configs"   "${working_dir}/usr/share/tiger-shell/"
 cp -rf "scripts"/* "${working_dir}/usr/share/tiger-shell/scripts/"
 cp "tiger-shell.sh" "${working_dir}/usr/bin"
+cp "Tiger-Shell-reset.sh" "${working_dir}/usr/bin"
+
+chmod +x "${working_dir}/usr/bin/Tiger-Shell-reset.sh"
+
 # cp tiger-session.desktop  "${working_dir}/usr/share/xsessions"
 
 echo "Downloading Whisker Menu scripts..."
