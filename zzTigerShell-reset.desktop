@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=Desfazer alterações do Tiger Shell
+Name=Restaurar interface de fábrica
 Comment=Permite resetar as personalizações no Tiger OS sem afetar seus programas e arquivos
 Exec=Tiger-Shell-reset.sh
-Icon=applications-utilities
+Icon=icon_restore_config
 Terminal=false
 Type=Application
 Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;
