@@ -2,7 +2,7 @@
 Name=Desfazer alterações do Tiger Shell
 Comment=Permite resetar as personalizações no Tiger OS sem afetar seus programas e arquivos
 Exec=Tiger-Shell-reset.sh
-Icon=org.xfce.settings.editor applications-utilities
+Icon=applications-utilities
 Terminal=false
 Type=Application
 Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;
