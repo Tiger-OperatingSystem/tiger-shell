@@ -1,7 +1,0 @@
-[Desktop Entry]
-Exec=/var/lib/curso-linux/alerta-videos
-Icon=dialog-scripts
-Name=Aviso sobre as video-aulas do Tiger OS
-Path=
-Type=Application
-X-KDE-AutostartScript=true
