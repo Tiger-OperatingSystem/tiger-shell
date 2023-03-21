@@ -100,5 +100,10 @@ done
 [ "${SKIP_XFCE}" = "1" ] && {
   exec xfce4-panel --restart
 } || {
+  (
+     cd  "$(xdg-user-dir DESKTOP)/";
+     chmod +x ubiquity.desktop;
+     gio set -t string ubiquity.desktop metadata::xfce-exe-checksum "$(sha256sum ubiquity.desktop | awk '{print $1}')";
+  )
   exec startxfce4.orig ${@}
 }
