@@ -1,6 +1,0 @@
-Command=echo "<txt>  </txt><txtclick>wmctrl -k on</txtclick><tool>Mostrar Área de trabalho</tool>"
-UseLabel=1
-Text=
-UpdatePeriod=30000
-Font=Noto Sans Bold Italic 10
-
