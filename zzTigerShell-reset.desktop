@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Restaurar interface de fábrica
-Comment=Permite resetar as personalizações no Tiger OS sem afetar seus programas e arquivos
+Comment=Permite restaurar as personalizações no Tiger OS sem afetar seus programas e arquivos
 Exec=Tiger-Shell-reset.sh
 Icon=icon_restore_config
 Terminal=false
