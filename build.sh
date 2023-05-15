@@ -27,7 +27,7 @@ cp "zzTigerShell-reset.desktop" "${working_dir}/usr/share/tiger/xfce-config/appl
  echo "Version: $(date +%y.%m.%d%H%M%S)"
  echo "Architecture: amd64"
  echo "Maintainer: Natanael Barbosa Santos"
- echo "Depends: xfce4, yad, xfce4-genmon-plugin, xfce4-pulseaudio-plugin, xfce4-whiskermenu-plugin, xfce4-battery-plugin, wmctrl"
+ echo "Depends: "
  echo "Description: $(cat ${HERE}/README.md  | sed -n '1p')"
  echo
 ) > "${working_dir}/DEBIAN/control"
