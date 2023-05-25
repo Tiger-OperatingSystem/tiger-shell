@@ -2,7 +2,6 @@
 
 # Calendário do Tiger OS, ele substitui o calendário padrão do XFCE através do monitor generico
 
-
 [ "${1}" = "--display-dialog" ] && {
   choose_date=$(yad --calendar --mouse --undecorated --close-on-unfocus --skip-taskbar --width=480 --heigth=380 --borders=32 --button="Abrir no Google Agenda":0 --date-format='%Y/%m/%d')
 
