@@ -1,2 +1,2 @@
 [user]
-pinned=/var/lib/flatpak/exports/share/applications/org.mozilla.firefox.desktop;/usr/share/applications/thunar.desktop;
+pinned=/usr/share/applications/firefox.desktop;/usr/share/applications/thunar.desktop;
