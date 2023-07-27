@@ -100,13 +100,14 @@ done
 [ "${SKIP_XFCE}" = "1" ] && {
   exec xfce4-panel --restart
 } || {
-  /usr/libexec/polkit-mate-authentication-agent-1 &  
+  /usr/lib/x86_64-linux-gnu/polkit-mate/polkit-mate-authentication-agent-1 &  
   (
+     mkdir -p "$(xdg-user-dir DESKTOP)/"
      cd  "$(xdg-user-dir DESKTOP)/";
      df | grep -w / | grep -q '/cow' && {
        cp /usr/share/applications/os-install.desktop os-install.desktop
        chmod +x os-install.desktop;
-       gio set -t string ubiquity.desktop metadata::xfce-exe-checksum "$(sha256sum os-install.desktop | awk '{print $1}')";
+       gio set -t string os-install.desktop metadata::xfce-exe-checksum "$(sha256sum os-install.desktop | awk '{print $1}')";
      }
   )
   exec startxfce4.orig ${@}
